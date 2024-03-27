@@ -1,0 +1,26 @@
+[project]
+name = "nats-ez"
+version = "0.0.1"
+description = "A flask-style framework for nats services"
+authors = [
+    {name = "Mikołaj Nowak", email = "12396461+m3nowak@users.noreply.github.com"},
+]
+dependencies = [
+    "nats-py>=2.7.2",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.1.1",
+]
